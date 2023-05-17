@@ -1,28 +1,11 @@
-require('dotenv').config();
+const express = require('express')
 
-const express = require('express');
-const mongoose = require('mongoose');
-var bodyParser = require('body-parser')
-const routes = require('./routes/routes');
-const authRoute = require('./routes/authRoute');
-const passport = require('passport');
-const applyPassportStrategy = require('./middlewares/passport');
-const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger.json');
-const cors = require('cors')
+const app = express()
+const PORT = 4000
 
-applyPassportStrategy(passport);
-
-const app = express();
-
-app.use(bodyParser.urlencoded({ extended: false }))
-
-app.set('views', './view');
-app.set('view engine', 'ejs');
-app.use(cors())
-
-
-app.use(express.json());
+app.listen(PORT, () => {
+    console.log(`API listening on PORT ${PORT} `)
+})
 
 app.use('/api-docs', swaggerUi.serve);
 app.get('/api-docs', swaggerUi.setup(swaggerDocument));
@@ -35,6 +18,6 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(3000, () => {
-    console.log(`Server Started at ${3000}`)
-})
+
+// Export the Express API
+module.exports = app
