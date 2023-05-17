@@ -1,0 +1,14 @@
+{
+    "serviceOperations": [
+        {
+            "serviceDomianBIANID": "7d3fba2d-3a60-e911-8237-06b0480421dc",
+            "serviceDomainName": "Current Account",
+            "baseCRBQName": "CurrentAccountFacility"
+        },
+        {
+            "serviceDomianBIANID": "11111111",
+            "serviceDomainName": "22222222222",
+            "baseCRBQName": "3333333333333"
+        }
+    ]
+}
