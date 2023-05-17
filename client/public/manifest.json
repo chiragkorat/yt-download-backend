@@ -1,0 +1,35 @@
+{
+  "short_name": "YouTube Downloader",
+  "name": "Convert and download Youtube videos to MP3, MP4, 3GP for free with our Youtube Downloader.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "icon-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
